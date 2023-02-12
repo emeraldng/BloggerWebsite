@@ -24,19 +24,28 @@ export const PostView = () => {
       });
   }, []);
 
-  if (isLoading) {
-    return (
-      <div className="App">
-        <h1>Cargando...</h1>
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <div className="App">
+  //       <h1>Cargando...</h1>
+  //     </div>
+  //   );
+  // }
 
   return (
     <>
-      <div>View Post</div>
-      <h2>{postsData.title}</h2>
-      <p>{postsData.body}</p>
+      <div className="container">
+        {
+          isLoading ? (
+
+            <h1>Cargando...</h1>
+
+          ) : (
+            <><div>View Post</div><h2>{postsData.title}</h2><p>{postsData.body}</p></>
+          )
+        }
+      </div>
+
     </>
   )
 }
