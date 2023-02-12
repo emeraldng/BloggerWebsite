@@ -9,7 +9,7 @@ export const PostCard = props => {
 
     return (
         <div className="col-12 col-md-6">
-            <div className="card card__post mb-3" key={props.id} style={{ backgroundImage: `url('${URL_IMG}${props.img}/500/600')` }}>
+            <div className="card card__post mb-3" key={props.id} style={{ background: `linear-gradient(rgba(255,255,255,.15), rgba(255,255,255,.15)), url('${URL_IMG}${props.img}/700/300')` }}>
                 <div>
                     <h5>{props.title}</h5>
                     <p>{props.id}</p>

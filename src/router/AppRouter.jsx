@@ -9,6 +9,7 @@ import { Lifestyle } from '../posts/pages/Lifestyle';
 import { Travel } from '../posts/pages/Travel';
 // import { CustomNavabar } from '../UI/components/CustomNavabar';
 import { PostView } from '../posts/pages/PostView';
+import { Footer } from '../UI/components/Footer';
 
 
 export const AppRouter = () => {
@@ -23,6 +24,7 @@ export const AppRouter = () => {
                 <Route path='travel' element={<Travel />} />
                 <Route path="post/:id" element={<PostView />} />
             </Routes>
+            <Footer/>
         </>
     )
 }
