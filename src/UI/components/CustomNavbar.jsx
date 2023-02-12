@@ -14,7 +14,7 @@ export const CustomNavbar = () => {
     <div className="container">
       <Nav defaultActiveKey="/home" as="ul">
         <Nav.Item as="li">
-          <NavLink className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} to="/">Home</NavLink>
+          <NavLink className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} to="/">All</NavLink>
         </Nav.Item>
         <Nav.Item as="li">
           <NavLink className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`} to="/travel">Travel</NavLink>

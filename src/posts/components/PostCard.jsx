@@ -28,23 +28,24 @@ export const PostCard = props => {
                             {/* The current API does not contain the "CATEGORIES" property, so I have bound the I.D to a dummy category. Thus showing its corresponding label */}
                             {
                                 (props.userId === 1 || props.userId === 10) &&
-                                <a href="" className="tag">Travel</a>
+                                <Link to="/travel" className="tag">Travel</Link>
                             }
                             {
                                 (props.userId === 2 || props.userId === 9) &&
-                                <a href="" className="tag">Lifestyle</a>
+                                <Link to="/lifestyle" className="tag">Lifestyle</Link>
                             }
                             {
                                 (props.userId === 3 || props.userId === 8) &&
-                                <a href="" className="tag">Bussiness</a>
+                                <Link to="/business
+                                " className="tag">Business</Link>
                             }
                             {
                                 (props.userId === 4 || props.userId === 7) &&
-                                <a href="" className="tag">Food</a>
+                                <Link to="/food" className="tag">Food</Link>
                             }
                             {
                                 (props.userId === 5 || props.userId === 6) &&
-                                <a href="" className="tag">Work</a>
+                                <Link to="/work" className="tag">Work</Link>
                             }
 
 
