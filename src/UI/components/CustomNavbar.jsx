@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import "./CustomNavbar.scss";
 
 
-export const CustomNavabar = () => {
+export const CustomNavbar = () => {
   return (
     // <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     //   <Container>
