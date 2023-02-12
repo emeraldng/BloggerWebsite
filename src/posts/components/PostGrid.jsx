@@ -19,7 +19,9 @@ export const PostGrid = () => {
             .then((responses) => Promise.all(responses.map((r) => r.json())))
             .then((data) => {
                 // Once the data is retraived, I store at the useState array
-                setPostsData(data[0].slice(0, 10));
+                // setPostsData(data[0].slice(0, 10));
+                setPostsData(data[0]);
+                console.log(data[0].slice(0, 10));
                 setImgsData([data[1].urls]);
                 // Our loading is seted to false to hide it.
                 setIsLoading(false);
@@ -53,6 +55,7 @@ export const PostGrid = () => {
                                     title={i.title}
                                     body={i.body}
                                     img={i.id}
+                                    userId={i.userId}
                                 />
                             </>
                         ))

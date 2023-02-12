@@ -14,3 +14,38 @@
         font-size: 18px;
     }
 }
+
+.card__link{
+    text-decoration: none;
+    &:hover{
+        -webkit-filter: brightness(.5);
+        filter: brightness(.5);
+    }
+}
+
+.tag{
+    text-decoration: none;
+
+    width: 100px;
+    height: 20px;
+    color: white;
+    background-color: #FF7F50;;
+    border-radius: 10px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons_card{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_icon{
+    background-color: #FF7F50;
+    margin-right: 5px;
+    svg{
+        fill: white;
+    }
+}

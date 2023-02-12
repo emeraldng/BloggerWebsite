@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <>
       <section className="home_view container">
-        <p className="mb-0"> <span>[</span> Making your Life Easier  <span>]</span></p>
+        <h4 className="mb-0"> <span>[</span> Making your Life Easier  <span>]</span></h4>
         <h1>Discovering the World</h1>
         <CustomNavbar />
         <div className="home_view">

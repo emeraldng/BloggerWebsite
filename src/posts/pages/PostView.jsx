@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Link, NavLink } from 'react-router-dom';
 
 
 export const PostView = () => {
@@ -24,17 +27,15 @@ export const PostView = () => {
       });
   }, []);
 
-  // if (isLoading) {
-  //   return (
-  //     <div className="App">
-  //       <h1>Cargando...</h1>
-  //     </div>
-  //   );
-  // }
+
 
   return (
     <>
-      <div className="container">
+      <div className="container pt-5">
+        <Breadcrumb>
+          <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+          <Breadcrumb.Item active>{postsData.title}</Breadcrumb.Item>
+        </Breadcrumb>
         {
           isLoading ? (
 
